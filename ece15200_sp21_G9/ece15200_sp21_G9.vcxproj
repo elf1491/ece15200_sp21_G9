@@ -24,7 +24,6 @@
     <ClCompile Include="disp_emp.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="search_emp.cpp" />
-    <ClCompile Include="Source.cpp" />
     <ClCompile Include="update_emp.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

@@ -30,9 +30,6 @@
     <ClCompile Include="search_emp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Source.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="update_emp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
