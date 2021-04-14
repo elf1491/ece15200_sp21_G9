@@ -19,11 +19,12 @@ void searchEmployee(int num, string name[], int empid[],
 		return;
 	}
 
-	cout << "Enter 0 for search by employee ID." << endl 
-		 << "Otherwise search by name will be performed." << endl;
+	cout << "Enter 0 to search by employee ID." << endl
+		 << "Enter 1 to search by employee name." << endl;
 	
 	// Ask user choice and store it in sch
 	// Your code
+	cin >> sch;
 
 	// If choice is 0
 	// Ask user to input employee ID in a variable eid
@@ -31,7 +32,47 @@ void searchEmployee(int num, string name[], int empid[],
 	// If a match found, display Name, Department, Start date, and Salary
 	// If not matched, display employee with given eid does not exist.
 	// Your code
+	int eid; string emp_name;
 	
+	for (int i = 0; i < num; i++) {
+		if (sch == 0) {
+			cout << "Enter employee ID:" << endl;
+			cin >> eid;
+
+			if (empid[i] == eid) {
+				cout << "Name "
+					<< name[i] << "\n";
+				cout << "Department "
+					<< dept[i] << "\n";
+				cout << "Start date "
+					<< doj[i] << "\n";
+				cout << "Salary "
+					<< salary[i] << "\n";
+			}
+
+			else {
+				cout << "Employee with given ID does not exist.\n";
+			}
+		}
+		else {
+			cout << "Type employee's name:" << endl;
+			cin >> emp_name;
+
+			if (name[i] == emp_name) {
+				cout << "Employee ID "
+					<< empid[i] << "\n";
+				cout << "Department "
+					<< dept[i] << "\n";
+				cout << "Start date "
+					<< doj[i] << "\n";
+				cout << "Salary "
+					<< salary[i] << "\n";
+		}
+			else {
+				cout << "Employee with given name does not exist.\n";
+			}
+		}
+	}
 	// If choice is other than 0
 	// Ask user to input employee name in a variable emp_name
 	// Scan name to find a match for emp_name
