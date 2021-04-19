@@ -1,4 +1,6 @@
 #include "edms.h"
+#include<iostream>
+using namespace std;
 
 /*
  num:    number of employees in the record
